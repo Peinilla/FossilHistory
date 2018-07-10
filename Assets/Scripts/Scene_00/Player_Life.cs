@@ -61,5 +61,8 @@ public class Player_Life : MonoBehaviour {
 			setLifeText ();
 			Destroy (col.gameObject);
 		}
-	}
+        if (col.gameObject.tag.Equals("Portal")) {
+            SceneManager.LoadScene("Scene_01");
+        }
+    }
 }

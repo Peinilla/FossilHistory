@@ -9,6 +9,7 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_Dirt;
 	public GameObject prefab_Wall;
 	public GameObject prefab_Friend;
+    public GameObject prefab_Portal;
 
 
 	public GameObject Player;
@@ -57,7 +58,8 @@ public class GroundManager : MonoBehaviour {
 					pl.defaultPos = Player.transform.position;
 					break;
 				case "8":
-					break;
+                        Instantiate(prefab_Portal, new Vector2(mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+                        break;
 				case "9":
 					Instantiate (prefab_Wall, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;

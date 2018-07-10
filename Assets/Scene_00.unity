@@ -1119,6 +1119,8 @@ MonoBehaviour:
     type: 2}
   prefab_Friend: {fileID: 1954174223052862, guid: 79d188e47ca34d94ea15df8988230df6,
     type: 2}
+  prefab_Portal: {fileID: 1066162936014190, guid: 25be054238a7bf34193bd669eb9f97e4,
+    type: 2}
   Player: {fileID: 1427170052}
 --- !u!4 &1301989020
 Transform:
