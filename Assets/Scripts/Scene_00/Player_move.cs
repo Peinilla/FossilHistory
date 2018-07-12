@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Player_move : MonoBehaviour {
 
@@ -36,7 +37,7 @@ public class Player_move : MonoBehaviour {
 				new Vector2 (f, r.velocity.y);
 		}
 	
-		//PC test
+		// KeyBorad test
 		if (Input.GetKeyDown (KeyCode.RightArrow)) {
 			move_Up (RIGHT);
 		}
@@ -49,35 +50,44 @@ public class Player_move : MonoBehaviour {
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			move_Left ();
 		}
-		//
+		// KeyBoard test END
 
 		// Mobile Test
 		if (Input.touchCount > 0) {
 			for (int idx = 0; idx < Input.touchCount; idx++) {
-				tempTouch = Input.GetTouch (idx);
-				touchPos = Camera.main.ScreenToWorldPoint(tempTouch.position);
+				if (!EventSystem.current.IsPointerOverGameObject()){
+					tempTouch = Input.GetTouch(idx);
+					touchPos = Camera.main.ScreenToWorldPoint(tempTouch.position);
 
-				switch (tempTouch.phase) {
-				case TouchPhase.Began:
-					move_Up (tempTouch.position.x > 1280);
-					break;
-				case TouchPhase.Moved:
-					if (tempTouch.position.x > 1280) {
-						move_Right ();
-					} else {
-						move_Left ();
+					switch (tempTouch.phase) {
+					case TouchPhase.Began:
+						move_Up (tempTouch.position.x > 1280);
+						break;
+					case TouchPhase.Moved:
+						if (tempTouch.position.x > 1280) {
+							move_Right ();
+						} else {
+							move_Left ();
+						}
+						break;
+					case TouchPhase.Stationary:
+						if (tempTouch.position.x > 1280) {
+							move_Right ();
+						} else {
+							move_Left ();
+						}
+						break;
+					case TouchPhase.Ended:
+						break;
 					}
-					break;
-				case TouchPhase.Stationary:
-					if (tempTouch.position.x > 1280) {
-						move_Right ();
-					} else {
-						move_Left ();
-					}
-					break;
-				case TouchPhase.Ended:
-					break;
 				}
+			}
+		}
+		// Mobile Test END
+
+		if (Input.GetMouseButtonDown (0)) {
+			if (EventSystem.current.IsPointerOverGameObject () == false) {
+				move_Up (RIGHT);
 			}
 		}
 	}
