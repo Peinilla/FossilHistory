@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Portal : MonoBehaviour {
+public class Button_GoMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +15,8 @@ public class Portal : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-    }
+	public void ButtonClick(){
+		Time.timeScale = 1.0f;
+		SceneManager.LoadScene ("Scene_Menu");
+	}
 }

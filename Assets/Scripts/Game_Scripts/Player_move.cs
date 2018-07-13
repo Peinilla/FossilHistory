@@ -55,41 +55,36 @@ public class Player_move : MonoBehaviour {
 		// Mobile Test
 		if (Input.touchCount > 0) {
 			for (int idx = 0; idx < Input.touchCount; idx++) {
-				if (!EventSystem.current.IsPointerOverGameObject()){
-					tempTouch = Input.GetTouch(idx);
-					touchPos = Camera.main.ScreenToWorldPoint(tempTouch.position);
 
-					switch (tempTouch.phase) {
-					case TouchPhase.Began:
-						move_Up (tempTouch.position.x > 1280);
-						break;
-					case TouchPhase.Moved:
-						if (tempTouch.position.x > 1280) {
-							move_Right ();
-						} else {
-							move_Left ();
-						}
-						break;
-					case TouchPhase.Stationary:
-						if (tempTouch.position.x > 1280) {
-							move_Right ();
-						} else {
-							move_Left ();
-						}
-						break;
-					case TouchPhase.Ended:
-						break;
+				if (EventSystem.current.IsPointerOverGameObject(idx)) { return; } // Check UI
+
+				tempTouch = Input.GetTouch (idx);
+				touchPos = Camera.main.ScreenToWorldPoint (tempTouch.position);
+
+				switch (tempTouch.phase) {
+				case TouchPhase.Began:
+					move_Up (tempTouch.position.x > 1280);
+					break;
+				case TouchPhase.Moved:
+					if (tempTouch.position.x > 1280) {
+						move_Right ();
+					} else {
+						move_Left ();
 					}
+					break;
+				case TouchPhase.Stationary:
+					if (tempTouch.position.x > 1280) {
+						move_Right ();
+					} else {
+						move_Left ();
+					}
+					break;
+				case TouchPhase.Ended:
+					break;
 				}
 			}
 		}
 		// Mobile Test END
-
-		if (Input.GetMouseButtonDown (0)) {
-			if (EventSystem.current.IsPointerOverGameObject () == false) {
-				move_Up (RIGHT);
-			}
-		}
 	}
 
 	void move_Up(bool isRight){
@@ -119,6 +114,7 @@ public class Player_move : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag.Equals ("Ground")) {
+
 			isJump = false;
 			r.velocity = new Vector2 (0, r.velocity.y);
 		}
@@ -126,6 +122,9 @@ public class Player_move : MonoBehaviour {
 
 	void OnCollisionExit2D(Collision2D col){
 		
+	}
+
+	void OnTriggerEnter2D(Collider2D col){
 	}
 
 

@@ -7,12 +7,15 @@ public class GroundManager : MonoBehaviour {
 
 	public GameObject prefab_Ground;
 	public GameObject prefab_Dirt;
+	public GameObject prefab_Water;
+	public GameObject prefab_WaterDeep;
 	public GameObject prefab_Wall;
 	public GameObject prefab_Friend;
     public GameObject prefab_Portal;
-
-
 	public GameObject Player;
+
+	public string stageData;
+	public int stageNum;
 
 	public const float tileSize = 2.56f;
 
@@ -30,7 +33,7 @@ public class GroundManager : MonoBehaviour {
 
 	public void mapSpawn()
 	{
-		TextAsset data = Resources.Load("Tutorial", typeof(TextAsset)) as TextAsset;
+		TextAsset data = Resources.Load(stageData, typeof(TextAsset)) as TextAsset;
 		StringReader sr = new StringReader(data.text);
 
 		mapLine = 0;
@@ -48,6 +51,12 @@ public class GroundManager : MonoBehaviour {
 					break;
 				case "1":
 					Instantiate (prefab_Ground, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "2":
+					Instantiate (prefab_WaterDeep, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "3":
+					Instantiate (prefab_Water, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "6":
 					Instantiate (prefab_Friend, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
