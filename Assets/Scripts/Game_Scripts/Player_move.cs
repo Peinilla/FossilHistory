@@ -114,8 +114,6 @@ public class Player_move : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag.Equals ("Ground")) {
-
-			isJump = false;
 			r.velocity = new Vector2 (0, r.velocity.y);
 		}
 	}
@@ -125,6 +123,7 @@ public class Player_move : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
+		isJump = false;
 	}
 
 
