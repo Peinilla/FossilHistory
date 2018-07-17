@@ -10,6 +10,8 @@ public class Player_move : MonoBehaviour {
 	private Touch tempTouch;
 	private Vector3 touchPos;
 
+	private Animator ani;
+
 	public const int MAX_SPEED = 12;
 	public const int JUMP_POWER = 750;
 	public const int HORIZONTAL_POWER = 50;
@@ -24,10 +26,20 @@ public class Player_move : MonoBehaviour {
 	void Start () {
 		r = GetComponent<Rigidbody2D> ();
 		isJump = false;
+
+		ani = GetComponent<Animator> ();
+
+		ani.SetBool ("Jump", false);
 	}
 
 	// Update is called once per frame
 	void Update () {
+		if (isJump) {
+			ani.SetBool ("Jump", true);
+		} else {
+			ani.SetBool ("Jump", false);
+		}
+
 		if (Mathf.Abs(r.velocity.x) > MAX_SPEED) {
 			float f = MAX_SPEED;
 			if (r.velocity.x < 0) {
