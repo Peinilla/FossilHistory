@@ -34,11 +34,6 @@ public class Player_move : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (isJump) {
-			ani.SetBool ("Jump", true);
-		} else {
-			ani.SetBool ("Jump", false);
-		}
 
 		if (Mathf.Abs(r.velocity.x) > MAX_SPEED) {
 			float f = MAX_SPEED;
@@ -103,7 +98,7 @@ public class Player_move : MonoBehaviour {
 		if (!isJump) {
 			isJump = true;
 			r.AddForce(Vector2.up * JUMP_POWER);
-
+			ani.Play ("Player_Jump", -1, 0);
 			if (isRight) {
 				r.velocity = Vector2.right * HORIZONTAL_BEGIN;
 			} else {

@@ -23,7 +23,7 @@ public class Player_Life : MonoBehaviour {
 	}
 
 	void FallCheck(){
-		if (transform.position.y < -100) {
+		if (transform.position.y < -20) {
 			Die ();
 		}
 	}
@@ -57,9 +57,6 @@ public class Player_Life : MonoBehaviour {
 		if (col.gameObject.tag.Equals ("Friend")) {
 			SaveFriend (col);
 		}
-        if (col.gameObject.tag.Equals("Portal")) {
-            SceneManager.LoadScene("Scene_01");
-        }
     }
 
 	void SaveFriend(Collider2D col){

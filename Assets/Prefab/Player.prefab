@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50982352314451136}
   - component: {fileID: 114823153241508876}
   - component: {fileID: 114461668933405378}
+  - component: {fileID: 95780543146343636}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -160,6 +161,23 @@ PolygonCollider2D:
       - {x: -0.35999998, y: 0}
       - {x: -0.32999998, y: 0.03}
       - {x: -0.32999998, y: 0.45}
+--- !u!95 &95780543146343636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436051349975520}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1f3cffd7bcbd4354ea08c3effc51e58f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114461668933405378
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,7 +236,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7f43eacc5673dd444a9c0abf84fffa4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e52c43ae641b0a44aac0e141e2b322ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
