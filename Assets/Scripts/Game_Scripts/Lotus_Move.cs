@@ -21,6 +21,11 @@ public class Lotus_Move : MonoBehaviour
         Vector3 nowpos = this.gameObject.transform.position;
         float tr = nowpos.x - startpos.x;
         transform.Translate(new Vector3(movement, 0, 0));
+        float sides = player.transform.position.x - nowpos.x;
+        if(sides>=-0.75f && sides <= 0.75f)
+        {
+            player.transform.Translate(new Vector3(movement, 0, 0));
+        }
         if (tr >= 5.12f && velocity >= 0.00f)
         {
             velocity = -velocity;
