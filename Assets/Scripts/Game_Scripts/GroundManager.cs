@@ -9,6 +9,7 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_Dirt;
 	public GameObject prefab_Water;
 	public GameObject prefab_WaterDeep;
+	public GameObject prefab_Lotus;
 	public GameObject prefab_Wall;
 	public GameObject prefab_Friend;
     public GameObject prefab_Portal;
@@ -57,6 +58,9 @@ public class GroundManager : MonoBehaviour {
 					break;
 				case "3":
 					Instantiate (prefab_Water, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "4":
+					Instantiate (prefab_Lotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "6":
 					Instantiate (prefab_Friend, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);

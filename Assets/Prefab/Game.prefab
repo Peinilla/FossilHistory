@@ -687,6 +687,8 @@ MonoBehaviour:
     type: 2}
   prefab_WaterDeep: {fileID: 1786513998917120, guid: 11258ac11dfd898499bdd499513998d7,
     type: 2}
+  prefab_Lotus: {fileID: 1566044773924662, guid: ecdf34b1d86c79047a5ebd21724401ec,
+    type: 2}
   prefab_Wall: {fileID: 1432797349414718, guid: e77089cf767abfe4daac69a6c1e7ab18,
     type: 2}
   prefab_Friend: {fileID: 1954174223052862, guid: 79d188e47ca34d94ea15df8988230df6,

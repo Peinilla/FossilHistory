@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\GroundManager.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Lotus_Move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Pause_Event.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_Life.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_move.cs" />
@@ -63,6 +64,7 @@
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />
      <None Include="Assets\Resources\Stage_01.txt" />
      <None Include="Assets\Resources\Tutorial.txt" />
+     <None Include="Assets\Resources\Stage_02.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
