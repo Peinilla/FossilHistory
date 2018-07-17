@@ -9,12 +9,10 @@ public class Player_Life : MonoBehaviour {
 	public Text lifeText;
 	public  Vector2 defaultPos;
 
-	private int life;
 	private Rigidbody2D r;
 
 	// Use this for initialization
 	void Start () {
-		life = 3;
 		setLifeText ();
 		r = GetComponent<Rigidbody2D> ();
 	}
@@ -36,8 +34,8 @@ public class Player_Life : MonoBehaviour {
 	}
 
 	void Die(){
-		if (life != 0) {
-			life--;
+		if (Player_Var.life != 0) {
+			Player_Var.life--;
 			setLifeText ();
 			ReSet ();
 		} else {
@@ -46,7 +44,7 @@ public class Player_Life : MonoBehaviour {
 	}
 
 	void setLifeText(){
-		lifeText.text = "Life : " + life;
+		lifeText.text = "Life : " + Player_Var.life;
 	}
 		
 	void OnCollisionEnter2D(Collision2D col){
@@ -57,12 +55,17 @@ public class Player_Life : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag.Equals ("Friend")) {
-			life++;
-			setLifeText ();
-			Destroy (col.gameObject);
+			SaveFriend (col);
 		}
         if (col.gameObject.tag.Equals("Portal")) {
             SceneManager.LoadScene("Scene_01");
         }
     }
+
+	void SaveFriend(Collider2D col){
+		Player_Var.life++;
+		Player_Var.num_Friend++;
+		setLifeText ();
+		Destroy (col.gameObject);
+	}
 }

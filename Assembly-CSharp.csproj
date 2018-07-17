@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Pause_Event.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_Life.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_move.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Player_Var.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />

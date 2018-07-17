@@ -17,5 +17,6 @@ public class Menu_Start : MonoBehaviour {
 
 	public void ButtonClick(){
 		SceneManager.LoadScene ("Scene_00");
+		Player_Var.life = 3;
 	}
 }
