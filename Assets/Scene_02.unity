@@ -162,6 +162,12 @@ Prefab:
       propertyPath: stageNum
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114533691002458114, guid: b24e9d7e4629e21488a534063fc8b87a,
+        type: 2}
+      propertyPath: prefab_Mushroom
+      value: 
+      objectReference: {fileID: 1830586804575672, guid: 0ae5828972075c342a531840c3dd7e07,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
   m_IsPrefabParent: 0

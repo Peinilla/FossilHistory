@@ -13,7 +13,11 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_Wall;
 	public GameObject prefab_Friend;
     public GameObject prefab_Portal;
+	public GameObject prefab_InnerDirt;
+	public GameObject prefab_InnerGround;
 	public GameObject Player;
+
+	public GameObject prefab_Mushroom;
 
 	public string stageData;
 	public int stageNum;
@@ -76,6 +80,16 @@ public class GroundManager : MonoBehaviour {
 				case "9":
 					Instantiate (prefab_Wall, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
+				case "10":
+					Instantiate (prefab_InnerDirt, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "11":
+					Instantiate (prefab_InnerGround, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "12":
+					Instantiate (prefab_Mushroom, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+
 				}
 			}
 			mapLine++;

@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Friend
   - Portal
+  - Jump_Mushroom
   layers:
   - Default
   - TransparentFX

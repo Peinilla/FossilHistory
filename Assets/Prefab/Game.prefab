@@ -695,7 +695,13 @@ MonoBehaviour:
     type: 2}
   prefab_Portal: {fileID: 1066162936014190, guid: 25be054238a7bf34193bd669eb9f97e4,
     type: 2}
+  prefab_InnerDirt: {fileID: 1391591042459826, guid: 3c33e6eef66622b45b49cf3aa823ab93,
+    type: 2}
+  prefab_InnerGround: {fileID: 1521155361104212, guid: beb3fb2c8fc1a024a8da436f1eb98a7b,
+    type: 2}
   Player: {fileID: 1890431761972524}
+  prefab_Mushroom: {fileID: 1830586804575672, guid: 0ae5828972075c342a531840c3dd7e07,
+    type: 2}
   stageData: 
   stageNum: 0
 --- !u!114 &114611531619980914
