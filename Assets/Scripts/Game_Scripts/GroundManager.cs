@@ -22,8 +22,7 @@ public class GroundManager : MonoBehaviour {
 	public string stageData;
 	public int stageNum;
 
-	public const float tileSize = 2.56f;
-
+	private const float tileSize = 2.56f;
 	private int mapLine;
 
 	// Use this for initialization

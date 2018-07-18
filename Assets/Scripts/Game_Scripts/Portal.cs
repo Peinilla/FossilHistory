@@ -18,7 +18,6 @@ public class Portal : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
 		GroundManager g = GameObject.Find ("GroundManager").GetComponent<GroundManager>();
 
-
 		switch (g.stageNum) {
 		case 0:
 			SceneManager.LoadScene ("Scene_01");

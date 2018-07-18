@@ -12,13 +12,13 @@ public class Player_move : MonoBehaviour {
 
 	private Animator ani;
 
-	public const int MAX_SPEED = 12;
-	public const int JUMP_POWER = 750;
-	public const int HORIZONTAL_POWER = 50;
-	public const int HORIZONTAL_BEGIN = 3;
+	private const int MAX_SPEED = 12;
+	private const int JUMP_POWER = 750;
+	private const int HORIZONTAL_POWER = 50;
+	private const int HORIZONTAL_BEGIN = 3;
 
-	public const bool RIGHT = true;
-	public const bool LEFT = false;
+	private const bool RIGHT = true;
+	private const bool LEFT = false;
 
 
 

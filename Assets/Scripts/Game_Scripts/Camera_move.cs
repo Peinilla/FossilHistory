@@ -6,8 +6,8 @@ public class Camera_move : MonoBehaviour {
 
 	public GameObject player;
 
-	Vector3 cameraPosition;
-	Vector3 offset;
+	private Vector3 cameraPosition;
+	private Vector3 offset;
 
 	// Use this for initialization
 
