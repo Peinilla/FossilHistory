@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Scripts\Lotus_Move.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Scripts\Portal.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="22" Column="26" />
-      <File FileName="Assets\Scripts\Game_Scripts\Portal.cs" Line="20" Column="3" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="59" Column="4" />
-      <File FileName="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" Line="18" Column="28" />
-      <File FileName="Assets\Scripts\Game_Scripts\Camera_move.cs" Line="11" Column="2" />
-      <File FileName="Assets\Scripts\Game_Scripts\Pause_Event.cs" Line="9" Column="2" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="50" Column="1" />
-      <File FileName="Assets\Scripts\Menu_Scripts\Menu_Start.cs" Line="11" Column="3" />
+      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="93" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Portal.cs" Line="22" Column="2" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="31" Column="2" />
+      <File FileName="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" Line="9" Column="43" />
+      <File FileName="Assets\Scripts\Game_Scripts\Camera_move.cs" Line="17" Column="4" />
+      <File FileName="Assets\Scripts\Game_Scripts\Pause_Event.cs" Line="12" Column="37" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="20" Column="16" />
+      <File FileName="Assets\Scripts\Menu_Scripts\Menu_Start.cs" Line="11" Column="2" />
       <File FileName="Assets\Scripts\Game_Scripts\Player_Var.cs" Line="2" Column="29" />
-      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="16" Column="4" />
+      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="17" Column="39" />
+      <File FileName="Assets\Scripts\Menu_Scripts\SetScreen.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

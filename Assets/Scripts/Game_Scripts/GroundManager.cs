@@ -15,35 +15,29 @@ public class GroundManager : MonoBehaviour {
     public GameObject prefab_Portal;
 	public GameObject prefab_InnerDirt;
 	public GameObject prefab_InnerGround;
+	public GameObject prefab_Mushroom;
+
 	public GameObject Player;
 
-	public GameObject prefab_Mushroom;
 
 	public string stageData;
 	public int stageNum;
 
 	private const float tileSize = 2.56f;
-	private int mapLine;
+	private int mapLine = 0;
 
-	// Use this for initialization
 	void Start () {
 		mapSpawn ();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public void mapSpawn()
 	{
-		TextAsset data = Resources.Load(stageData, typeof(TextAsset)) as TextAsset;
+		TextAsset data = Resources.Load(stageData, typeof(TextAsset)) as TextAsset; // Read Mapdata
 		StringReader sr = new StringReader(data.text);
 
 		mapLine = 0;
-		// 먼저 한줄을 읽는다. 
 
-		string oneLine = sr.ReadLine();
+		string oneLine = sr.ReadLine(); // Read oneLine
 		while (oneLine != null) {
 
 			string[] mapData = oneLine.Split ('\t');
@@ -95,17 +89,4 @@ public class GroundManager : MonoBehaviour {
 			oneLine = sr.ReadLine();
 		}
 	}
-
-	void defaultMapSpawn () {
-		for (int idx = -15; idx < 20; idx++) {
-			Instantiate (prefab_Ground, new Vector2 ((float)(idx * 2.56) - 18, -5f), Quaternion.identity);
-			Instantiate (prefab_Dirt, new Vector2 ((float)(idx * 2.56) - 18, -7.56f), Quaternion.identity);
-			Instantiate (prefab_Dirt, new Vector2 ((float)(idx * 2.56) - 18, -10.12f), Quaternion.identity);
-
-		}
-
-		Instantiate (prefab_Ground, new Vector2 ((float)(10 * 2.56) - 18, -5 + 2.56f), Quaternion.identity);
-	}
-
-
 }

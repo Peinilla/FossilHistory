@@ -11,13 +11,11 @@ public class Player_Life : MonoBehaviour {
 
 	private Rigidbody2D r;
 
-	// Use this for initialization
 	void Start () {
 		setLifeText ();
 		r = GetComponent<Rigidbody2D> ();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		FallCheck ();
 	}

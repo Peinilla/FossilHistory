@@ -9,17 +9,15 @@ public class Camera_move : MonoBehaviour {
 	private Vector3 cameraPosition;
 	private Vector3 offset;
 
-	// Use this for initialization
-
 	void Start () {
 		offset = transform.position;
 		cameraPosition = offset;
 	}
 
-	// Update is called once per frame
-	void Update () {
-
-	}
+	/*
+	 * Camera Moving Function 
+	 * Camera follow Player X vector
+	 */
 	void LateUpdate(){
 
 		cameraPosition.x = player.transform.position.x + offset.x + 8f;

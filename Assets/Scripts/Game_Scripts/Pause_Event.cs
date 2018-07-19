@@ -7,15 +7,6 @@ using UnityEngine.UI;
 public class Pause_Event : MonoBehaviour {
 	public Image panel;
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public void ButtonClick()
     {
 		if (panel.gameObject.activeSelf) {

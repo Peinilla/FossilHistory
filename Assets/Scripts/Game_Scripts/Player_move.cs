@@ -20,9 +20,6 @@ public class Player_move : MonoBehaviour {
 	private const bool RIGHT = true;
 	private const bool LEFT = false;
 
-
-
-	// Use this for initialization
 	void Start () {
 		r = GetComponent<Rigidbody2D> ();
 		isJump = false;
@@ -32,7 +29,6 @@ public class Player_move : MonoBehaviour {
 		ani.SetBool ("Jump", false);
 	}
 
-	// Update is called once per frame
 	void Update () {
 
 		if (Mathf.Abs(r.velocity.x) > MAX_SPEED) {

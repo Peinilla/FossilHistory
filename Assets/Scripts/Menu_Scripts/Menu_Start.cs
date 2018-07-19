@@ -4,19 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu_Start : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public void ButtonClick(){
-		SceneManager.LoadScene ("Scene_00");
-		Player_Var.life = 3;
+		SceneManager.LoadScene ("Scene_00"); // Scene_00 Load, Scene_00 is Tutorial Map
+		Player_Var.life = 3; // init Player Life
 	}
 }
