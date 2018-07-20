@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class Player_Life : MonoBehaviour {
 
 	public Text lifeText;
-	public  Vector2 defaultPos;
 
 	private Rigidbody2D r;
 
@@ -26,16 +25,11 @@ public class Player_Life : MonoBehaviour {
 		}
 	}
 
-	void ReSet(){
-		r.velocity = Vector2.zero;
-		transform.position = defaultPos;
-	}
-
 	void Die(){
 		if (Player_Var.life != 0) {
 			Player_Var.life--;
 			setLifeText ();
-			ReSet ();
+			GameObject.FindWithTag ("Player").SendMessage ("player_Reset"); // Player Reset
 		} else {
 			SceneManager.LoadScene ("Scene_Menu");
 		}

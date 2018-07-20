@@ -5,11 +5,12 @@ using UnityEngine.EventSystems;
 
 public class Player_move : MonoBehaviour {
 
+	public Vector2 defaultPos;
+
 	private Rigidbody2D r;
 	private bool isJump;
+	private bool isWater;
 	private Touch tempTouch;
-	private Vector3 touchPos;
-
 	private Animator ani;
 
 	private const int MAX_SPEED = 12;
@@ -22,11 +23,9 @@ public class Player_move : MonoBehaviour {
 
 	void Start () {
 		r = GetComponent<Rigidbody2D> ();
-		isJump = false;
-
 		ani = GetComponent<Animator> ();
 
-		ani.SetBool ("Jump", false);
+		player_Reset ();
 	}
 
 	void Update () {
@@ -62,7 +61,6 @@ public class Player_move : MonoBehaviour {
 				if (EventSystem.current.IsPointerOverGameObject(idx)) { return; } // Check UI
 
 				tempTouch = Input.GetTouch (idx);
-				touchPos = Camera.main.ScreenToWorldPoint (tempTouch.position);
 
 				switch (tempTouch.phase) {
 				case TouchPhase.Began:
@@ -115,10 +113,22 @@ public class Player_move : MonoBehaviour {
 		}
 	}
 
+	void player_Reset(){
+		r.velocity = Vector2.zero;
+		r.gravityScale = 10f;
+		r.mass = 0.5f;
+		transform.position = defaultPos;
+
+		isJump = false;
+		isWater = false;
+
+		ani.SetBool ("Jump", false);
+	}
+
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag.Equals ("Ground")) {
 			r.velocity = new Vector2 (0, r.velocity.y);
-		}
+		} 
 	}
 
 	void OnCollisionExit2D(Collision2D col){
@@ -133,8 +143,13 @@ public class Player_move : MonoBehaviour {
 			isJump = true;
 			r.velocity = Vector2.zero;
 			r.velocity = Vector2.up * 45;
+		}else if (col.gameObject.tag.Equals ("Water")) {
+			if (!isWater) {
+				r.velocity = Vector2.down;
+				r.mass = 100;
+				r.gravityScale = 0.2f;
+				isWater = true;
+			}
 		}
 	}
-
-
 }

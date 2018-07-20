@@ -9,6 +9,7 @@ TagManager:
   - Friend
   - Portal
   - Jump_Mushroom
+  - Water
   layers:
   - Default
   - TransparentFX

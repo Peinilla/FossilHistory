@@ -446,7 +446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeText: {fileID: 114611531619980914}
-  defaultPos: {x: 0, y: 0}
 --- !u!114 &114064093998419970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -701,9 +700,9 @@ MonoBehaviour:
     type: 2}
   prefab_Dirt: {fileID: 1155509011908732, guid: 37ea0d9349367114a9f699902a93e7f9,
     type: 2}
-  prefab_Water: {fileID: 1689688733493822, guid: 320fba9b2f5739a45862fe84e42a0d6a,
+  prefab_Water: {fileID: 1164280798463382, guid: 29570cf015059ea4e8965423aebce337,
     type: 2}
-  prefab_WaterDeep: {fileID: 1786513998917120, guid: 11258ac11dfd898499bdd499513998d7,
+  prefab_WaterDeep: {fileID: 1455710755800740, guid: 89495d004b73cfc418ea3202b301fd88,
     type: 2}
   prefab_Lotus: {fileID: 1566044773924662, guid: ecdf34b1d86c79047a5ebd21724401ec,
     type: 2}
@@ -717,9 +716,9 @@ MonoBehaviour:
     type: 2}
   prefab_InnerGround: {fileID: 1521155361104212, guid: beb3fb2c8fc1a024a8da436f1eb98a7b,
     type: 2}
-  Player: {fileID: 1890431761972524}
   prefab_Mushroom: {fileID: 1830586804575672, guid: 0ae5828972075c342a531840c3dd7e07,
     type: 2}
+  Player: {fileID: 1890431761972524}
   stageData: 
   stageNum: 0
 --- !u!114 &114611531619980914
@@ -873,6 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30558a23f802d5943b00ef13e753cc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultPos: {x: 0, y: 0}
 --- !u!114 &114938516672667084
 MonoBehaviour:
   m_ObjectHideFlags: 1

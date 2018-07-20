@@ -64,7 +64,7 @@ public class GroundManager : MonoBehaviour {
 					break;
 				case "7":
 					Player.transform.position = new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize));
-					Player_Life pl = GameObject.Find ("Player").GetComponent<Player_Life> ();
+					Player_move pl = GameObject.Find ("Player").GetComponent<Player_move> ();
 					pl.defaultPos = Player.transform.position;
 					break;
 				case "8":
