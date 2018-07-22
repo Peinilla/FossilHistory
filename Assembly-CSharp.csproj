@@ -62,6 +62,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Player_SoundManager.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_Var.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Portal.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Trap_Tree.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />
      <None Include="Assets\Resources\Stage_01.txt" />

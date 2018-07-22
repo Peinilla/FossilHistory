@@ -16,6 +16,7 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_InnerDirt;
 	public GameObject prefab_InnerGround;
 	public GameObject prefab_Mushroom;
+	public GameObject prefab_Trap_Tree;
 
 	public GameObject Player;
 
@@ -81,6 +82,9 @@ public class GroundManager : MonoBehaviour {
 					break;
 				case "12":
 					Instantiate (prefab_Mushroom, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "15":
+					Instantiate (prefab_Trap_Tree, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 
 				}

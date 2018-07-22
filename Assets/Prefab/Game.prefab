@@ -811,6 +811,8 @@ MonoBehaviour:
     type: 2}
   prefab_Mushroom: {fileID: 1061797539343366, guid: 0ae5828972075c342a531840c3dd7e07,
     type: 2}
+  prefab_Trap_Tree: {fileID: 1828250580794736, guid: b3f38596bd567894fbdfd85e4f56e04d,
+    type: 2}
   Player: {fileID: 1890431761972524}
   stageData: 
   stageNum: 0
