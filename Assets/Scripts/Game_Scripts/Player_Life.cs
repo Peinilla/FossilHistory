@@ -48,6 +48,8 @@ public class Player_Life : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag.Equals ("Friend")) {
 			SaveFriend (col);
+		}else if (col.gameObject.tag.Equals ("Monster")) {
+			Die ();
 		}
     }
 

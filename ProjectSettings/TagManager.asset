@@ -10,6 +10,7 @@ TagManager:
   - Portal
   - Jump_Mushroom
   - Water
+  - Monster
   layers:
   - Default
   - TransparentFX
