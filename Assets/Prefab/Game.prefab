@@ -809,7 +809,7 @@ MonoBehaviour:
     type: 2}
   prefab_InnerGround: {fileID: 1521155361104212, guid: beb3fb2c8fc1a024a8da436f1eb98a7b,
     type: 2}
-  prefab_Mushroom: {fileID: 1830586804575672, guid: 0ae5828972075c342a531840c3dd7e07,
+  prefab_Mushroom: {fileID: 1061797539343366, guid: 0ae5828972075c342a531840c3dd7e07,
     type: 2}
   Player: {fileID: 1890431761972524}
   stageData: 
