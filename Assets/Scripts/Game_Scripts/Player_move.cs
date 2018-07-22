@@ -92,7 +92,7 @@ public class Player_move : MonoBehaviour {
 		if (!isJump) {
 			isJump = true;
 			r.AddForce(Vector2.up * JUMP_POWER);
-			ani.Play ("Player_Jump", -1, 0);
+			ani.Play ("Player_Jump");
 			if (isRight) {
 				r.velocity = Vector2.right * HORIZONTAL_BEGIN;
 			} else {
