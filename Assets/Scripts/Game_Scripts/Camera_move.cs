@@ -5,13 +5,11 @@ using UnityEngine;
 public class Camera_move : MonoBehaviour {
 
 	public GameObject player;
+	public float offset_Y = 3f;
 
 	private Vector3 cameraPosition;
-	private Vector3 offset;
 
 	void Start () {
-		offset = transform.position;
-		cameraPosition = offset;
 	}
 
 	/*
@@ -20,7 +18,16 @@ public class Camera_move : MonoBehaviour {
 	 */
 	void LateUpdate(){
 
-		cameraPosition.x = player.transform.position.x + offset.x + 8f;
+		cameraPosition.x = player.transform.position.x + 8f;
+		cameraPosition.y = player.transform.position.y + offset_Y;
+
+		transform.position = cameraPosition;
+	}
+
+	void setCameraPosition(){
+		cameraPosition.x = player.transform.position.x + 8f;
+		cameraPosition.y = player.transform.position.y + offset_Y;
+		cameraPosition.z = -10f;
 
 		transform.position = cameraPosition;
 	}

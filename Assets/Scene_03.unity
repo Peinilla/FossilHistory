@@ -162,6 +162,27 @@ Prefab:
       propertyPath: stageNum
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 50368051770317352, guid: b24e9d7e4629e21488a534063fc8b87a,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755578125013362, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755578125013362, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831368597485618, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831368597485618, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
   m_IsPrefabParent: 0

@@ -1,21 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Scripts\GroundManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Scripts\Camera_move.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="94" Column="4" />
+      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="79" Column="50" />
       <File FileName="Assets\Scripts\Game_Scripts\Portal.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="11" Column="22" />
       <File FileName="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Camera_move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Camera_move.cs" Line="34" Column="2" />
       <File FileName="Assets\Scripts\Game_Scripts\Pause_Event.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="32" Column="49" />
       <File FileName="Assets\Scripts\Menu_Scripts\Menu_Start.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Player_Var.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="19" Column="21" />
       <File FileName="Assets\Scripts\Menu_Scripts\SetScreen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Player_SoundManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Moster_Frog.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Trap_Tree.cs" Line="15" Column="2" />
+      <File FileName="Assets\Scripts\Game_Scripts\Camera_Move_Stage3.cs" Line="16" Column="28" />
+      <File FileName="Assets\Scripts\Menu_Scripts\Menu_Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Disappear.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

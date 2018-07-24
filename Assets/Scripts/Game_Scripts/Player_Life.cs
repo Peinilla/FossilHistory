@@ -21,7 +21,7 @@ public class Player_Life : MonoBehaviour {
 
 	void FallCheck(){
 		if (transform.position.y < -10) {
-			Die ();
+			//Die ();
 		}
 	}
 
