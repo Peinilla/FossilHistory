@@ -64,6 +64,8 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Player_SoundManager.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Player_Var.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Portal.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Stage00_BackGround_Ground.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Stage00_BackGround_Sky.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Trap_Tree.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Player.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />

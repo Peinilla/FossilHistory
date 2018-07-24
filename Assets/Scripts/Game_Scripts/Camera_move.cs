@@ -19,7 +19,7 @@ public class Camera_move : MonoBehaviour {
 	void LateUpdate(){
 
 		cameraPosition.x = player.transform.position.x + 8f;
-		cameraPosition.y = player.transform.position.y + offset_Y;
+		//cameraPosition.y = player.transform.position.y + offset_Y;
 
 		transform.position = cameraPosition;
 	}
