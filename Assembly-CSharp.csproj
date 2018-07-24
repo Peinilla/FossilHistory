@@ -69,7 +69,6 @@
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />
      <None Include="Assets\Resources\Stage_01.txt" />
      <None Include="Assets\Resources\Tutorial.txt" />
-     <None Include="Assets\Resources\Stage_03.txt" />
      <None Include="Assets\Resources\Stage_02.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
