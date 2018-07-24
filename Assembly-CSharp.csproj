@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\GroundManager.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Lotus_Disappear.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Lotus_Move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Moster_Frog.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Pause_Event.cs" />
