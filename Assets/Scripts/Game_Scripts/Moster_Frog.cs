@@ -14,6 +14,6 @@ public class Moster_Frog : MonoBehaviour {
 	}
 
 	void grab(){
-		anim.Play ("Frog_Grab");
+		anim.Play ("Frog_Grab_Stay");
 	}
 }

@@ -12,6 +12,7 @@ TagManager:
   - Water
   - Monster
   - Trap
+  - Frog
   layers:
   - Default
   - TransparentFX

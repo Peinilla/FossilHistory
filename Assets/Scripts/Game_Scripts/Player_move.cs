@@ -128,8 +128,13 @@ public class Player_move : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag.Equals ("Ground")) {
 			r.velocity = new Vector2 (0, r.velocity.y);
-		} 
-	}
+		}
+        if (col.gameObject.tag.Equals("Frog"))
+        {
+            r.velocity = new Vector2(0, r.velocity.y);
+            isJump = false;
+        }
+    }
 
 	void OnCollisionExit2D(Collision2D col){
 		
