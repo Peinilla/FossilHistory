@@ -51,10 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Game_Scripts\BackGround_Cloud.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\BackGround_Sky.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_Move_Stage3.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Ground_Environment.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Ground_Pass.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\GroundManager.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Jump_MushRoom.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Lotus_Disappear.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Lotus_Move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Moster_Frog.cs" />
@@ -70,6 +75,7 @@
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Player.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scripts\SoundManager.cs" />
      <None Include="Assets\Resources\Stage_01.txt" />
      <None Include="Assets\Resources\Tutorial.txt" />
      <None Include="Assets\Resources\Stage_03.txt" />

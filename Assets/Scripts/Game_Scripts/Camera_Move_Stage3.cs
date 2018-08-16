@@ -21,14 +21,12 @@ void LateUpdate(){
 	cameraPosition.x = player.transform.position.x + 8f;
 
 	transform.position = cameraPosition;
-}
+	}
 
 void setCameraPosition(){
 	cameraPosition.x = player.transform.position.x + 8f;
 	cameraPosition.y = player.transform.position.y + 5f;
 
 	transform.position = cameraPosition;
-
-	Debug.Log ("test");
-}
+	}
 }

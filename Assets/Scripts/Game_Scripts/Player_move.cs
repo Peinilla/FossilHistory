@@ -123,6 +123,10 @@ public class Player_move : MonoBehaviour {
 		isWater = false;
 
 		ani.SetBool ("Jump", false);
+
+		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Needs_Repair")) {
+			go.transform.Find ("lotus").gameObject.SetActive(true);
+		}
 	}
 
 	void OnCollisionEnter2D(Collision2D col){
@@ -136,13 +140,15 @@ public class Player_move : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.gameObject.tag.Equals("Ground")){
+		if (col.gameObject.tag.Equals("Ground") && r.velocity.y < 0){
 			isJump = false;
 		}
 		else if (col.gameObject.tag.Equals("Jump_Mushroom")){
 			isJump = true;
 			r.velocity = Vector2.zero;
 			r.velocity = Vector2.up * 45;
+			ani.Play ("Player_Jump");
+
 		}else if (col.gameObject.tag.Equals ("Water")) {
 			if (!isWater) {
 				r.velocity = Vector2.down;

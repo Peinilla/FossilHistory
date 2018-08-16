@@ -10,6 +10,10 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_Water;
 	public GameObject prefab_WaterDeep;
 	public GameObject prefab_Lotus;
+	public GameObject prefab_LottenLotus;
+	public GameObject prefab_Fix_Lotus;
+	public GameObject prefab_Fix_LottenLotus;
+	public GameObject prefab_Frog;
 	public GameObject prefab_Wall;
 	public GameObject prefab_Friend;
     public GameObject prefab_Portal;
@@ -60,6 +64,18 @@ public class GroundManager : MonoBehaviour {
 				case "4":
 					Instantiate (prefab_Lotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
+				case "41":
+					Instantiate (prefab_LottenLotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "42":
+					Instantiate (prefab_Fix_Lotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "43":
+					Instantiate (prefab_Fix_LottenLotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "5":
+					//Instantiate (prefab_Lotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
 				case "6":
 					Instantiate (prefab_Friend, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
@@ -87,7 +103,22 @@ public class GroundManager : MonoBehaviour {
 				case "15":
 					Instantiate (prefab_Trap_Tree, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
-
+				}
+			}
+			for (int idx = mapData.Length; idx < mapData.Length + 6; idx++) {
+				switch (mapData [mapData.Length - 1]) {
+				case "0":
+				case "1":
+					Instantiate (prefab_Dirt, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "2":
+				case "3":
+					Instantiate (prefab_WaterDeep, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
+				case "10":
+				case "11":
+					Instantiate (prefab_InnerDirt, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					break;
 				}
 			}
 			mapLine++;

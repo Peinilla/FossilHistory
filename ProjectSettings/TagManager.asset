@@ -12,6 +12,8 @@ TagManager:
   - Water
   - Monster
   - Trap
+  - Sky
+  - Needs_Repair
   layers:
   - Default
   - TransparentFX

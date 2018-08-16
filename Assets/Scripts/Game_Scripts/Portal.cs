@@ -6,8 +6,17 @@ using UnityEngine.SceneManagement;
 public class Portal : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col) {
-		GroundManager g = GameObject.Find ("GroundManager").GetComponent<GroundManager>();
+		if (col.gameObject.tag.Equals ("Player")) {
+			Invoke ("nextStage", 1);
+		}
+    }
 
+	void OnTriggerExit2D(Collider2D col) {
+		//CancelInvoke ();
+	}
+
+	void nextStage(){
+		GroundManager g = GameObject.Find ("GroundManager").GetComponent<GroundManager>();
 		switch (g.stageNum) {
 		case 0:
 			SceneManager.LoadScene ("Scene_01");
@@ -18,5 +27,5 @@ public class Portal : MonoBehaviour {
 		case 2:
 			break;
 		}
-    }
+	}
 }

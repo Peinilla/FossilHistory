@@ -16,17 +16,15 @@ public class Lotus_Disappear : MonoBehaviour
     {
 
     }
+
     void OnTriggerEnter2D(Collider2D col)
+	{
+		if (col.gameObject.tag == "Player") {
+			Invoke ("Lot", 3);
+		}
+	}
 
-    {
-
-        if (col.gameObject.tag == "Player")
-
-        {
-
-            Destroy(this.gameObject, 5);
-
-        }
-
-    }
+	void Lot(){
+		this.gameObject.SetActive (false);
+	}
 }

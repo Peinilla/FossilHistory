@@ -5,7 +5,9 @@ using UnityEngine;
 public class Stage00_BackGround_Ground : MonoBehaviour {
 
 	public GameObject player;
-	public float offset_Y = 3f;
+
+	public float incl;
+	public float constant;
 
 	private Vector3 cameraPosition;
 
@@ -14,17 +16,17 @@ public class Stage00_BackGround_Ground : MonoBehaviour {
 		cameraPosition = transform.position;
 	}
 
-	void LateUpdate(){
-		cameraPosition.x = (70f/95f) * player.transform.position.x + 20f;
-		//cameraPosition.y = player.transform.position.y + offset_Y;
-
-		transform.position = cameraPosition;
+	void Update(){
+		if (player.transform.position.x - 35 > cameraPosition.x) {
+			constant += 81.92f;
+		} else if (player.transform.position.x + 46.92 < cameraPosition.x) {
+			constant -= 81.92f;
+		}
 	}
 
-	void setCameraPosition(){
-		cameraPosition.x = player.transform.position.x;
-		cameraPosition.y = player.transform.position.y + offset_Y;
-		cameraPosition.z = 10f;
+	void LateUpdate(){
+		cameraPosition.x = incl * player.transform.position.x + constant;
+		//cameraPosition.y = player.transform.position.y + offset_Y;
 
 		transform.position = cameraPosition;
 	}

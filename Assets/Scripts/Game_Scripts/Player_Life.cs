@@ -8,11 +8,10 @@ public class Player_Life : MonoBehaviour {
 
 	public Text lifeText;
 
-	private Rigidbody2D r;
+	private bool dieFlag = false;
 
 	void Start () {
 		setLifeText ();
-		r = GetComponent<Rigidbody2D> ();
 	}
 
 	void Update () {
@@ -20,13 +19,14 @@ public class Player_Life : MonoBehaviour {
 	}
 
 	void FallCheck(){
-		if (transform.position.y < -10) {
-			Die ();
+		if (transform.position.y < -100) {
+			//Die ();
 		}
 	}
 
 	void Die(){
 		if (Player_Var.life != 0) {
+			dieFlag = false;
 			Player_Var.life--;
 			setLifeText ();
 			GameObject.FindWithTag ("Player").SendMessage ("player_Reset"); // Player Reset
@@ -48,8 +48,13 @@ public class Player_Life : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag.Equals ("Friend")) {
 			SaveFriend (col);
-		}else if (col.gameObject.tag.Equals ("Monster")) {
+		} else if (col.gameObject.tag.Equals ("Monster")) {
 			Die ();
+		} else if (col.gameObject.tag.Equals ("Water")) {
+			if (!dieFlag) {
+				Invoke ("Die", 2);
+				dieFlag = true;
+			}
 		}
     }
 
@@ -57,6 +62,14 @@ public class Player_Life : MonoBehaviour {
 		Player_Var.life++;
 		Player_Var.num_Friend++;
 		setLifeText ();
-		Destroy (col.gameObject);
+
+		col.gameObject.transform.Find ("Effect_up1").gameObject.SetActive(true);
+		col.gameObject.transform.Find ("Effect_Blink").gameObject.SetActive(true);
+		col.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
+		col.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		col.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+		col.gameObject.GetComponent<Rigidbody2D> ().gravityScale = 0;
+		col.gameObject.GetComponent<Animator>().Play ("Frined_Happy");
+		Destroy (col.gameObject, 1.5f);
 	}
 }
