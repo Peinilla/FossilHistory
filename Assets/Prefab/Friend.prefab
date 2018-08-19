@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 212751514538912618}
   - component: {fileID: 50088928875960926}
   - component: {fileID: 61580616709014442}
-  - component: {fileID: 58669145624663700}
+  - component: {fileID: 70565171653418836}
   - component: {fileID: 95903493355606760}
   m_Layer: 0
   m_Name: Friend
@@ -74,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1954174223052862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.88, y: 1.26, z: 0}
+  m_LocalPosition: {x: 99.99, y: 1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4820823187119746}
@@ -148,21 +148,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58669145624663700
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1954174223052862}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 3
 --- !u!61 &61580616709014442
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -188,6 +173,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.85}
   m_EdgeRadius: 0
+--- !u!70 &70565171653418836
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1954174223052862}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000046357517, y: 0.3888751}
+  m_Size: {x: 4, y: 2.517265}
+  m_Direction: 1
 --- !u!82 &82521217366075746
 AudioSource:
   m_ObjectHideFlags: 1
@@ -199,7 +199,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a9ef41b220d3194468b5734db4b7d24a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.539
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -442,7 +442,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: d9ebe833d55a9a6458918bc6108f9009, type: 3}
-  m_Color: {r: 0.75735295, g: 0.75735295, b: 0.75735295, a: 1}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

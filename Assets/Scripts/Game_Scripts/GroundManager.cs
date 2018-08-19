@@ -21,6 +21,11 @@ public class GroundManager : MonoBehaviour {
 	public GameObject prefab_InnerGround;
 	public GameObject prefab_Mushroom;
 	public GameObject prefab_Trap_Tree;
+	public GameObject prefab_Trap_Spike1;
+	public GameObject prefab_Trap_Spike2;
+	public GameObject prefab_Trap_DropSpike;
+	public GameObject prefab_End;
+
 
 	public GameObject Player;
 
@@ -74,7 +79,7 @@ public class GroundManager : MonoBehaviour {
 					Instantiate (prefab_Fix_LottenLotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "5":
-					//Instantiate (prefab_Lotus, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					Instantiate (prefab_Frog, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "6":
 					Instantiate (prefab_Friend, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
@@ -101,7 +106,19 @@ public class GroundManager : MonoBehaviour {
 					Instantiate (prefab_Mushroom, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "15":
-					Instantiate (prefab_Trap_Tree, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
+					Instantiate (prefab_Trap_Tree, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - ((idx + 1) * tileSize)), Quaternion.identity);
+					break;
+				case "19":
+					Instantiate (prefab_Trap_DropSpike, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - ((idx) * tileSize)), Quaternion.identity);
+					break;
+				case "20":
+					Instantiate (prefab_Trap_Spike1, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - ((idx) * tileSize)), Quaternion.identity);
+					break;
+				case "201":
+					Instantiate (prefab_Trap_Spike2, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - ((idx) * tileSize)), Quaternion.identity);
+					break;
+				case "77":
+					Instantiate (prefab_End, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - ((idx) * tileSize)), Quaternion.identity);
 					break;
 				}
 			}
@@ -109,6 +126,7 @@ public class GroundManager : MonoBehaviour {
 				switch (mapData [mapData.Length - 1]) {
 				case "0":
 				case "1":
+				case "20":
 					Instantiate (prefab_Dirt, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				case "2":
@@ -117,6 +135,7 @@ public class GroundManager : MonoBehaviour {
 					break;
 				case "10":
 				case "11":
+				case "201":
 					Instantiate (prefab_InnerDirt, new Vector2 (mapLine * tileSize - 28.24f, 12.92f - (idx * tileSize)), Quaternion.identity);
 					break;
 				}

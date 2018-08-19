@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu_Start : MonoBehaviour {
-	public void ButtonClick(){
+	public void btn_Start(){
 		SceneManager.LoadScene ("Scene_00"); // Scene_00 Load, Scene_00 is Tutorial Map
-		Player_Var.life = 3; // init Player Life
+	}
+	public void btn_End(){		
+		Application.Quit();
 	}
 }

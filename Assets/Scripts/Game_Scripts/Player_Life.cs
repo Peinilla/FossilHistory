@@ -6,12 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class Player_Life : MonoBehaviour {
 
-	public Text lifeText;
+	public GameObject prefab_Die;
 
 	private bool dieFlag = false;
+	private Animator ani;
+	private Rigidbody2D r;
 
 	void Start () {
-		setLifeText ();
+		ani = GetComponent<Animator> ();
+		r = GetComponent<Rigidbody2D> ();
+
+		GameObject.Find ("Text_Friend_Num").GetComponent<Text> ().text = "X " + Player_Var.num_Friend;
 	}
 
 	void Update () {
@@ -25,18 +30,19 @@ public class Player_Life : MonoBehaviour {
 	}
 
 	void Die(){
-		if (Player_Var.life != 0) {
-			dieFlag = false;
-			Player_Var.life--;
-			setLifeText ();
-			GameObject.FindWithTag ("Player").SendMessage ("player_Reset"); // Player Reset
-		} else {
-			SceneManager.LoadScene ("Scene_Menu");
-		}
+		ani.Play ("Player_Die");
+		gameObject.SetActive (false);
+		Destroy(Instantiate (prefab_Die, transform.position, Quaternion.identity),1);
+		Invoke ("Reset", 1);
 	}
 
-	void setLifeText(){
-		lifeText.text = "Life : " + Player_Var.life;
+	void Reset(){
+
+		gameObject.SetActive (true);
+
+		dieFlag = false;
+		GameObject.FindWithTag ("Player").SendMessage ("player_Reset"); // Player Reset
+
 	}
 		
 	void OnCollisionEnter2D(Collision2D col){
@@ -50,23 +56,24 @@ public class Player_Life : MonoBehaviour {
 			SaveFriend (col);
 		} else if (col.gameObject.tag.Equals ("Monster")) {
 			Die ();
-		} else if (col.gameObject.tag.Equals ("Water")) {
+		}else if (col.gameObject.tag.Equals ("Trap")) {
+			Die ();
+		}  else if (col.gameObject.tag.Equals ("Water")) {
 			if (!dieFlag) {
-				Invoke ("Die", 2);
+				Invoke ("Die", 0.5f);
 				dieFlag = true;
 			}
 		}
     }
 
 	void SaveFriend(Collider2D col){
-		Player_Var.life++;
 		Player_Var.num_Friend++;
-		setLifeText ();
+		GameObject.Find ("Text_Friend_Num").GetComponent<Text> ().text = "X " + Player_Var.num_Friend;
 
 		col.gameObject.transform.Find ("Effect_up1").gameObject.SetActive(true);
 		col.gameObject.transform.Find ("Effect_Blink").gameObject.SetActive(true);
 		col.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
-		col.gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		col.gameObject.GetComponent<CapsuleCollider2D> ().enabled = false;
 		col.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
 		col.gameObject.GetComponent<Rigidbody2D> ().gravityScale = 0;
 		col.gameObject.GetComponent<Animator>().Play ("Frined_Happy");

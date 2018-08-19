@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene_ani.unity
+    guid: 487a9157e747db94eb6358659e169b44
+  - enabled: 1
+    path: Assets/Scene_Sound.unity
+    guid: f24794497b1af7b4d956c4af97935d9c
+  - enabled: 1
     path: Assets/Scene_Menu.unity
     guid: b21066410d6def94a9d9854c5c1039d8
   - enabled: 1
@@ -17,3 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene_02.unity
     guid: 24ab78728dac11e4c94f5e10bba92948
+  - enabled: 1
+    path: Assets/Scene_03.unity
+    guid: 38653d555ce4a264096c5c51c5fa5f14
+  - enabled: 1
+    path: Assets/Scene_End.unity
+    guid: c5b26382cfc437d4e9b4a015105a1819

@@ -25,6 +25,10 @@ public class Portal : MonoBehaviour {
 			SceneManager.LoadScene ("Scene_02");
 			break;
 		case 2:
+			SceneManager.LoadScene ("Scene_03");
+			break;
+		case 3:
+			SceneManager.LoadScene ("Scene_End");
 			break;
 		}
 	}

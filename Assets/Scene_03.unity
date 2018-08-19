@@ -193,6 +193,14 @@ Prefab:
       propertyPath: stageData
       value: Stage_03
       objectReference: {fileID: 0}
+    - target: {fileID: 4938088699236966, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938088699236966, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b24e9d7e4629e21488a534063fc8b87a, type: 2}
   m_IsPrefabParent: 0

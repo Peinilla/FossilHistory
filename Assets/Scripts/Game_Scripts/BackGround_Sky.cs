@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BackGround_Sky : MonoBehaviour {
+	
+	public GameObject player;
 
 	public GameObject prefab_Cloud1;
 	public GameObject prefab_Cloud2;
@@ -10,15 +12,15 @@ public class BackGround_Sky : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("spawnCloud", 0, 10);
-		Instantiate (prefab_Cloud1, new Vector2 (transform.position.x + Random.Range(-10f,10f), transform.position.y + Random.Range(2f,11f)), Quaternion.identity).transform.parent = GameObject.Find("Main Camera").GetComponent<Transform>();
-		Instantiate (prefab_Cloud2, new Vector2 (transform.position.x + Random.Range(-10f,10f), transform.position.y + Random.Range(2f,11f)), Quaternion.identity).transform.parent = GameObject.Find("Main Camera").GetComponent<Transform>();
 	}
 
 	void spawnCloud(){
+		Vector2 Pos = new Vector2(player.transform.position.x + 25, player.transform.position.y + Random.Range (5f, 12f));
+
 		if (Random.Range (0, 1f) > 0.5f) {
-			Instantiate (prefab_Cloud1, new Vector2 (transform.position.x + 25, transform.position.y + Random.Range(2f,11f)), Quaternion.identity).transform.parent = GameObject.Find("Main Camera").GetComponent<Transform>();
+			Instantiate (prefab_Cloud1, Pos, Quaternion.identity);
 		} else {
-			Instantiate (prefab_Cloud2, new Vector2 (transform.position.x + 25, transform.position.y + Random.Range(2f,11f)), Quaternion.identity).transform.parent = GameObject.Find("Main Camera").GetComponent<Transform>();
+			Instantiate (prefab_Cloud2, Pos, Quaternion.identity);
 		}
 	}
 }

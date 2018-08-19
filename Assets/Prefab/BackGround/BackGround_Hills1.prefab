@@ -115,6 +115,7 @@ MonoBehaviour:
   player: {fileID: 0}
   incl: 0.5
   constant: 40.96
+  Y_const: 0
 --- !u!114 &114784709224850166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -129,6 +130,7 @@ MonoBehaviour:
   player: {fileID: 0}
   incl: 0.5
   constant: 0
+  Y_const: 0
 --- !u!212 &212559573347678190
 SpriteRenderer:
   m_ObjectHideFlags: 1

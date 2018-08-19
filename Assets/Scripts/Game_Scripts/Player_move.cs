@@ -122,7 +122,7 @@ public class Player_move : MonoBehaviour {
 		isJump = false;
 		isWater = false;
 
-		ani.SetBool ("Jump", false);
+		ani.Play("Player_Idle");
 
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag("Needs_Repair")) {
 			go.transform.Find ("lotus").gameObject.SetActive(true);

@@ -8,12 +8,15 @@ public class Stage00_BackGround_Ground : MonoBehaviour {
 
 	public float incl;
 	public float constant;
+	//public float Y_incl;
+	public float Y_const;
 
-	private Vector3 cameraPosition;
+	private Vector2 cameraPosition;
 
 	// Use this for initialization
 	void Start () {
-		cameraPosition = transform.position;
+		cameraPosition.x = transform.position.x;
+		cameraPosition.y = player.transform.position.y + Y_const;
 	}
 
 	void Update(){
@@ -26,7 +29,7 @@ public class Stage00_BackGround_Ground : MonoBehaviour {
 
 	void LateUpdate(){
 		cameraPosition.x = incl * player.transform.position.x + constant;
-		//cameraPosition.y = player.transform.position.y + offset_Y;
+		//cameraPosition.y = Y_incl * player.transform.position.y + Y_const;
 
 		transform.position = cameraPosition;
 	}

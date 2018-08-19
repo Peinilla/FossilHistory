@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_move.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Camera_Move_Stage3.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Endding_Stone.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Ground_Environment.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Ground_Pass.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\GroundManager.cs" />
@@ -71,13 +72,16 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Portal.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Stage00_BackGround_Ground.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Stage00_BackGround_Sky.cs" />
+     <Compile Include="Assets\Scripts\Game_Scripts\Trap_Stalactite.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Trap_Tree.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scripts\Endding.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Player.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scripts\Openning.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\SetScreen.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\SoundManager.cs" />
      <None Include="Assets\Resources\Stage_01.txt" />
-     <None Include="Assets\Resources\Tutorial.txt" />
+     <None Include="Assets\Resources\Stage_00.txt" />
      <None Include="Assets\Resources\Stage_03.txt" />
      <None Include="Assets\Resources\Stage_02.txt" />
  <Reference Include="UnityEngine.UI">

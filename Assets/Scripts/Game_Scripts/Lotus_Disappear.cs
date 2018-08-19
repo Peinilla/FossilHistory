@@ -26,5 +26,10 @@ public class Lotus_Disappear : MonoBehaviour
 
 	void Lot(){
 		this.gameObject.SetActive (false);
+		Invoke ("Reset", 3);
 	}
-}
+
+	void Reset(){
+		this.gameObject.SetActive (true);
+	}
+} 

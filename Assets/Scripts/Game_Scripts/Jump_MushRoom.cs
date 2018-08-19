@@ -17,6 +17,8 @@ public class Jump_MushRoom : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		anim.Play ("mush");
+		if (col.gameObject.tag.Equals ("Player")) {
+			anim.Play ("mush");
+		}
 	}
 }
