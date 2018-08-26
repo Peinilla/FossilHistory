@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Game_Scripts\Trap_Stalactite.cs" />
      <Compile Include="Assets\Scripts\Game_Scripts\Trap_Tree.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Endding.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scripts\Endding_TimeScore.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Player.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Menu_Start.cs" />
      <Compile Include="Assets\Scripts\Menu_Scripts\Openning.cs" />

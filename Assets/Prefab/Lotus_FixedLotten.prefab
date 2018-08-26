@@ -20,10 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4776093762184196}
   - component: {fileID: 212654080916307020}
-  - component: {fileID: 61161994832521742}
   - component: {fileID: 50968619881737392}
-  - component: {fileID: 61945476174718328}
   - component: {fileID: 114260622867356568}
+  - component: {fileID: 61945476174718328}
+  - component: {fileID: 61161994832521742}
+  - component: {fileID: 70358233934541054}
   m_Layer: 0
   m_Name: lotus
   m_TagString: Ground
@@ -84,7 +85,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -105,7 +106,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -116,7 +117,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 0.4}
+  m_Size: {x: 4.1, y: 0.25}
   m_EdgeRadius: 0
 --- !u!61 &61945476174718328
 BoxCollider2D:
@@ -130,7 +131,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -141,8 +142,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 0.4}
+  m_Size: {x: 4.1, y: 0.25}
   m_EdgeRadius: 0
+--- !u!70 &70358233934541054
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123890977571972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2}
+  m_Size: {x: 4.2, y: 0.3}
+  m_Direction: 1
 --- !u!114 &114260622867356568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,6 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c33a13b1013c06e4994b15b6bd545b60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefab_Clone: {fileID: 1574804990373710}
 --- !u!212 &212654080916307020
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -2,33 +2,36 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Game_Scripts\Player_Life.cs">
     <Files>
-      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="113" Column="15" />
+      <File FileName="Assets\Scripts\Game_Scripts\GroundManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Portal.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="118" Column="24" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_move.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Button_GoMenu.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Camera_move.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Pause_Event.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="64" Column="20" />
-      <File FileName="Assets\Scripts\Menu_Scripts\Menu_Start.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Player_Var.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="36" Column="67" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_Life.cs" Line="19" Column="18" />
+      <File FileName="Assets\Scripts\Menu_Scripts\Menu_Start.cs" Line="16" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Player_Var.cs" Line="3" Column="41" />
+      <File FileName="Assets\Scripts\Game_Scripts\Lotus_Move.cs" Line="21" Column="2" />
       <File FileName="Assets\Scripts\Menu_Scripts\SetScreen.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Player_SoundManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Moster_Frog.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Camera_Move_Stage3.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menu_Scripts\Menu_Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Lotus_Disappear.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Stage00_BackGround_Ground.cs" Line="19" Column="60" />
-      <File FileName="Assets\Scripts\Game_Scripts\Stage00_BackGround_Sky.cs" Line="21" Column="3" />
+      <File FileName="Assets\Scripts\Game_Scripts\Stage00_BackGround_Ground.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Stage00_BackGround_Sky.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Ground_Pass.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Jump_MushRoom.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menu_Scripts\SoundManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\Trap_Tree.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Game_Scripts\BackGround_Cloud.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\BackGround_Sky.cs" Line="13" Column="17" />
-      <File FileName="Assets\Scripts\Game_Scripts\Ground_Environment.cs" Line="10" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\BackGround_Sky.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Ground_Environment.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menu_Scripts\Openning.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Game_Scripts\Trap_Stalactite.cs" Line="8" Column="2" />
+      <File FileName="Assets\Scripts\Game_Scripts\Trap_Stalactite.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Game_Scripts\Endding_Stone.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu_Scripts\Endding.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\Menu_Scripts\Endding_TimeScore.cs" Line="11" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

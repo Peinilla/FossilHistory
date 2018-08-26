@@ -140,7 +140,7 @@ public class Player_move : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D col){
-		if (col.gameObject.tag.Equals("Ground") && r.velocity.y < 0){
+		if (col.gameObject.tag.Equals("Ground") && r.velocity.y <= 0){
 			isJump = false;
 		}
 		else if (col.gameObject.tag.Equals("Jump_Mushroom")){

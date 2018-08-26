@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Lotus_Move : MonoBehaviour
 {
-    private GameObject player;
 	private float velocity;
-	private  Vector3 startpos;
+	private Rigidbody2D r;
 
     void Start()
     {
-		velocity = Random.Range (3f, 6f);
+		velocity = 2.5f;
 		if (Random.value >= 0.5) {
 			velocity *= -1;
 		}
-		player = GameObject.Find ("Player");
         Vector3 pos = this.gameObject.transform.position;
-        startpos = pos;
+		r = GetComponent<Rigidbody2D> ();
+
+		r.velocity = new Vector2 (velocity, 0);
     }
 
     void Update()
     {
+		/*
         float movement = velocity * Time.deltaTime;
         Vector3 nowpos = this.gameObject.transform.position;
         float tr = nowpos.x - startpos.x;
@@ -35,18 +36,26 @@ public class Lotus_Move : MonoBehaviour
         {
 			velocity = -velocity / Mathf.Abs (velocity) * Random.Range (3f, 6f);
         }
+        */
     }
-
+		
 	void OnCollisionEnter2D(Collision2D col){
-		if (col.gameObject.tag.Equals ("Ground")) {
-			velocity = -velocity / Mathf.Abs (velocity) * Random.Range (3f, 6f);
-			transform.Translate(new Vector2(velocity * Time.deltaTime, 0));
+		if (col.gameObject.tag.Equals ("Player")) {
+			BoxCollider2D[] c = GetComponents<BoxCollider2D> ();
+			c [1].offset = new Vector2 (0, 0.1f);
+		}
+	}
+	void OnCollisionExit2D(Collision2D col){
+		if (col.gameObject.tag.Equals ("Player")) {
+			BoxCollider2D[] c = GetComponents<BoxCollider2D> ();
+			c [1].offset = new Vector2 (0, 0);
 		}
 	}
 
-	void OnCollisionStay2D(Collision2D col){
+	void OnTriggerEnter2D(Collider2D col){
 		if (col.gameObject.tag.Equals ("Player")) {
-			player.transform.Translate (new Vector2 (velocity * Time.deltaTime, 0));
+			col.gameObject.GetComponent<Rigidbody2D> ().velocity = Vector2.zero;
+			col.gameObject.GetComponent<Rigidbody2D> ().velocity = r.velocity;
 		}
 	}
 }

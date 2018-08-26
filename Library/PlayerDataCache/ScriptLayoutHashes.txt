@@ -23,7 +23,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Ground_Environment
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Button_GoMenu
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Lotus_Disappear
+70b66fa61794773b0d9bc123bbbe5678 Assembly-CSharp.dll:.Lotus_Disappear
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -153,6 +153,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Camera_move
 3c59a0f3464b5e65ab4a7c76987230c7 Assembly-CSharp.dll:.Trap_Stalactite
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Ground_Pass
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Endding
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -169,8 +170,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 8df03119979e3ae6992f217c88054ee7 Assembly-CSharp.dll:.BackGround_Sky
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Openning
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Endding_Stone
 ad8f88ac3664f48aa1fd3382173ca741 Assembly-CSharp.dll:.Stage00_BackGround_Ground
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Moster_Frog
 9c0ff6ffa3a46b6b8bfb902eef7632ae Assembly-CSharp.dll:.GroundManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Endding_Stone
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Endding
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Endding_TimeScore

@@ -23,7 +23,7 @@ public class Openning : MonoBehaviour {
 		}
 	}
 
-	void GameStart(){
+	public void GameStart(){
 		SceneManager.LoadScene ("Scene_Sound");
 	}
 }
